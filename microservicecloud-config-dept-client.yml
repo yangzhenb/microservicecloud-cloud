@@ -12,6 +12,7 @@ mybatis:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
 
 spring:
+   profiles: dev 
    application:
     # 对外暴露的为服务应用名，显示在eureka服务端的application实例名
     name: microservicecloud-config-dept-client
@@ -51,6 +52,7 @@ mybatis:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
 
 spring:
+   profiles: test
    application:
     # 对外暴露的为服务应用名，显示在eureka服务端的application实例名
     name: microservicecloud-config-dept-client
